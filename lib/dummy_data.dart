@@ -5,51 +5,62 @@ import './models/meal.dart';
 
 const DUMMY_CATEGORIES = const [
   Category(
+    img:"assets/images/it.jpg",
     id: 'c1',
     title: 'Italian',
     color: Colors.purple,
+
   ),
   Category(
+    img:"assets/images/qu.jpg",
     id: 'c2',
     title: 'Quick & Easy',
     color: Colors.red,
   ),
   Category(
+    img:"assets/images/hu.jpg",
     id: 'c3',
     title: 'Hamburgers',
     color: Colors.orange,
   ),
   Category(
+    img:"assets/images/ge.jpg",
     id: 'c4',
     title: 'German',
     color: Colors.amber,
   ),
   Category(
+    img:"assets/images/li.jpg",
     id: 'c5',
-    title: 'Light & Lovely',
+    title: 'Light',
     color: Colors.blue,
   ),
   Category(
+    img:"assets/images/it.jpg",
     id: 'c6',
     title: 'Exotic',
     color: Colors.green,
   ),
   Category(
+    img:"assets/images/it.jpg",
     id: 'c7',
     title: 'Breakfast',
     color: Colors.lightBlue,
   ),
   Category(
+    img:"assets/images/as.jpg",
     id: 'c8',
     title: 'Asian',
     color: Colors.lightGreen,
   ),
   Category(
+    img:"assets/images/fr.jpg",
     id: 'c9',
     title: 'French',
     color: Colors.pink,
   ),
   Category(
+    img:"assets/images/su.jpg",
     id: 'c10',
     title: 'Summer',
     color: Colors.teal,
