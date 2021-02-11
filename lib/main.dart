@@ -1,7 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:mealapp/screens/CategoryMealsScreen.dart';
-import 'package:mealapp/screens/categories_screen.dart';
+import 'package:mealapp/screens/FiltersScreen.dart';
+import 'package:mealapp/screens/MealDetailScreen.dart';
+import 'package:mealapp/screens/TabsScreen.dart';
+
 
 void main() => runApp(MyApp());
 
@@ -35,28 +38,11 @@ class MyApp extends StatelessWidget {
      // home: CategoriesScreen(),
       initialRoute: '/',
       routes: {
-        '/':(context)=>CategoriesScreen(),
+        '/':(context)=>TabsScreen(),
         CategoryMealsScreen.routeName: (ctx) => CategoryMealsScreen(),
-//        MealDetailScreen.routeName: (ctx) => MealDetailScreen(),
-//        FiltersScreen.routeName: (ctx) => FiltersScreen(),
+        MealDetailScreen.routeName: (ctx) => MealDetailScreen(),
+        FiltersScreen.routeName: (ctx) => FiltersScreen(),
       },
     );
   }
 }
-
-//class MyHomePage extends StatefulWidget {
-//  @override
-//  _MyHomePageState createState() => _MyHomePageState();
-//}
-//
-//class _MyHomePageState extends State<MyHomePage> {
-//  @override
-//  Widget build(BuildContext context) {
-//    return Scaffold(
-//      appBar: AppBar(
-//        title: Text("Meal App"),
-//      ),
-//      body: CategoriesScreen(),
-//    );
-//  }
-//}

@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:mealapp/screens/MealDetailScreen.dart';
 
 import '../models/meal.dart';
 
@@ -49,13 +50,13 @@ class MealItem extends StatelessWidget {
   }
 
   void selectMeal(BuildContext ctx) {
-//    Navigator.of(ctx).pushNamed(MealDetailScreen.routeName, arguments: id)
-//    // only when popped this function returns a value
-//        .then((result) {
-//      if (result != null) {
-//        removeItem(result);
-//      }
-//    });
+    Navigator.of(ctx).pushNamed(MealDetailScreen.routeName, arguments: id)
+    // only when popped this function returns a value
+        .then((result) {
+      if (result != null) {
+        removeItem(result);
+      }
+    });
   }
 
   @override

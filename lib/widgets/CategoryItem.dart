@@ -56,12 +56,12 @@ class CategoryItem extends StatelessWidget {
               width: 150,
               padding: EdgeInsets.symmetric(
                 vertical: 5,
-                horizontal: 10,
+                horizontal: 5,
               ),
               child: Text(
                 title,
                 style: TextStyle(
-                  fontSize: 20,
+                  fontSize: 17,
                   color: Colors.white,
                 ),
                 softWrap: true,
