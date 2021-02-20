@@ -30,7 +30,8 @@ class MainDrawer extends StatelessWidget {
       child: Column(
         children: <Widget>[
           Container(
-            color: Theme.of(context).primaryColor,
+//            color: Theme.of(context).primaryColor,
+            color: Colors.amber,
             height: 120,
             width: double.infinity,
             padding: EdgeInsets.all(20),
@@ -38,9 +39,10 @@ class MainDrawer extends StatelessWidget {
             child: Text(
               'Aklne  - أكلني',
               style: TextStyle(
+                fontFamily: 'RobotoCondensed',
                 fontWeight: FontWeight.w900,
                 fontSize: 30,
-                color: Colors.white,
+                color: Theme.of(context).primaryColor,
               ),
             ),
           ),
@@ -50,9 +52,13 @@ class MainDrawer extends StatelessWidget {
           _buildListTile('Meals', Icons.restaurant, () {
             Navigator.of(context).pushReplacementNamed('/');
           }),
+          Divider(), //here is a divider
+
           _buildListTile('Filters', Icons.settings, () {
-            Navigator.of(context).pushReplacementNamed(FiltersScreen.routeName);
+            Navigator.of(context).pushNamed(FiltersScreen.routeName);
           }),
+          Divider(), //here is a divider
+
           _buildListTile('Exit', Icons.exit_to_app, () {
             SystemNavigator.pop();          }),
         ],
